@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.5">
     <title>Care Dot - Child Safety & Real-Time Monitoring</title>
+    <!-- Google Fonts: Poppins for Modern Freestyle Look -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
             --primary-color: #4f46e5;
@@ -16,14 +18,14 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Poppins', sans-serif; /* Modern Style Font */
         }
         body {
             background-color: var(--bg-color);
             color: var(--text-color);
             line-height: 1.6;
         }
-        /* Navigation Bar */
+        /* Navigation Bar with Logo Style */
         nav {
             background: #ffffff;
             padding: 1rem 2rem;
@@ -35,7 +37,22 @@
             top: 0;
             z-index: 100;
         }
-        nav h2 { color: var(--primary-color); }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo-area img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .logo-area h2 { 
+            color: var(--primary-color); 
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
         nav ul {
             display: flex;
             list-style: none;
@@ -44,7 +61,7 @@
         nav ul li a {
             text-decoration: none;
             color: var(--text-color);
-            font-weight: 600;
+            font-weight: 500;
             transition: color 0.3s;
         }
         nav ul li a:hover { color: var(--primary-color); }
@@ -59,12 +76,14 @@
         header h1 {
             font-size: 3rem;
             margin-bottom: 1rem;
+            font-weight: 700;
         }
         header p {
-            font-size: 1.25rem;
+            font-size: 1.2rem;
             max-width: 700px;
             margin: 0 auto 2rem auto;
             opacity: 0.95;
+            font-weight: 300;
         }
         .download-btn {
             background: #ffffff;
@@ -72,7 +91,7 @@
             padding: 0.85rem 2rem;
             border-radius: 30px;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 600;
             font-size: 1.1rem;
             box-shadow: 0 4px 14px rgba(0,0,0,0.15);
             transition: transform 0.2s, background 0.2s;
@@ -99,6 +118,7 @@
             color: var(--primary-color);
             margin-bottom: 1.5rem;
             font-size: 1.8rem;
+            font-weight: 600;
         }
         .features-grid, .steps-grid {
             display: grid;
@@ -116,9 +136,9 @@
         .feature-card h3, .step-card h3 {
             margin-bottom: 0.5rem;
             color: #0f172a;
+            font-weight: 600;
         }
         
-        /* App Banner Image Placeholder */
         .app-image-container {
             text-align: center;
             margin: 1.5rem 0;
@@ -130,13 +150,11 @@
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
 
-        /* Contact Details */
         .contact-box p {
             margin-bottom: 0.75rem;
             font-size: 1.1rem;
         }
 
-        /* Footer */
         footer {
             text-align: center;
             padding: 2.5rem 2rem;
@@ -163,9 +181,13 @@
 </head>
 <body>
 
-    <!-- Navigation -->
+    <!-- Navigation with Logo Space -->
     <nav>
-        <h2>Care Dot</h2>
+        <div class="logo-area">
+            <!-- உங்கள் லோகோ இமேஜ் லிங்கை இங்கே மாற்றிக்கொள்ளலாம் -->
+            <img src="logo.png" alt="Care Dot Logo">
+            <h2>Care Dot</h2>
+        </div>
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#features">Features</a></li>
@@ -191,7 +213,7 @@
             <p>Care Dot is designed to keep parents seamlessly connected with their children safely and securely. Without the hassle of complex username and password sign-ups, our application uses a simple, highly secure pairing mechanism to bridge parent and child devices instantly.</p>
         </section>
 
-        <!-- Key Features & Images Section -->
+        <!-- Key Features Section -->
         <section id="features">
             <h2>Key Features & Functionality</h2>
             <div class="features-grid">
@@ -211,12 +233,6 @@
                     <h3>Device Status Monitoring</h3>
                     <p>Keep track of essential device health metrics like battery level and connection status right from the parent app.</p>
                 </div>
-            </div>
-            
-            <!-- Optional App Banner/Mockup Image -->
-            <div class="app-image-container" style="margin-top: 2rem;">
-                <!-- உங்கள் ஆப் ஸ்கிரீன்ஷாட் அல்லது இமேஜ் லிங்கை இங்கே மாற்றிக்கொள்ளலாம் -->
-                <img src="https://images.unsplash.com/photo-1596526131083-e8c633c948d2?auto=format&fit=crop&w=800&q=80" alt="Care Dot App Preview">
             </div>
         </section>
 
